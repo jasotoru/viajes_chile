@@ -17,13 +17,31 @@ body {
 }
 
 /* NAVBAR */
-
 .navbar-main a {
     color: var(--text-color);
 }
 
 .navbar-brand  img {
 	width: 50px;
+}
+
+/* CARRUSEL - Agregando las imagenes como background para que cubran el navbar*/
+.carrusel-image {
+    background-size: cover;
+  	background-repeat: no-repeat;
+    height: 900px;
+}
+
+.image1 {
+    background-image: url('../img/carousel1.jpg');
+}
+
+.image2 {
+    background-image: url('../img/carousel2.jpg');
+}
+
+.image3 {
+    background-image: url('../img/carousel3.jpg');
 }
 
 /* SECCION QUIENES SOMOS */
