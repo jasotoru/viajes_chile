@@ -1,0 +1,74 @@
+:root {
+    --info: #0FDBF2;
+    --black: #0D0D0D;
+    --text-color: #FFF; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--black);
+    color: var(--text-color);
+}
+
+/* NAVBAR */
+
+.navbar-main a {
+    color: var(--text-color);
+}
+
+.navbar-brand  img {
+	width: 50px;
+}
+
+/* SECCION QUIENES SOMOS */
+.quienes-somos i {
+    background-color: var(--info); 
+    font-size: 30px;
+}
+
+/* SECCION DESTACADOS */
+.destacados .card {
+    max-width: auto;
+    color: var(--text-color);
+}
+
+.destacados .card img {
+    max-width: auto;
+    height: 173px;
+}
+
+.destacados .card-body {
+    background-color: var(--info); 
+}
+
+/* FORMULARIO CONTACTO */
+.contacto .btn {
+    background-color: var(--info);
+    color: var(--text-color);
+}
+
+.contacto .btn:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+.footer {
+	height: 70px;
+    background-color: var(--info);
+}
+
+.footer p {
+    font-weight: 700;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+}

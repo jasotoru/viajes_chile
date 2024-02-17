@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,39 +18,47 @@
     <title>Viajes Chile</title>
 </head>
 <body>
-    <header class="hero-section">
-        <!--NAVBAR-->
-        <nav>
-            <div>
-                <a href="index.html">
-                    <img src="assets/img/viajes.svg" alt="logo">
-                    Viajes Chile
-                </a>
-                <div>
-                  <div>
-                      <a href="index.html">Inicio</a>
-                      <a href="#quienes-somos">Quienes somos</a>
-                      <a href="#destacados">Destacados</a>
-                      <a href="#contacto">Contacto</a>
-                  </div>
-              </div>
+    <header>
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-md fixed-top navbar-main">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/img/viajes.svg" alt="logo">
+            Viajes Chile
+          </a>
+          <button class="navbar-toggler" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navMain"
+                  aria-controls="navMain" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMain">
+            <div class="nav ms-auto flex-column flex-md-row">
+              <a href="index.html" class="nav-link">Inicio</a>
+              <a href="#quienes-somos" class="nav-link">Quienes somos</a>
+              <a href="#destacados" class="nav-link">Destacados</a>
+              <a href="#contacto" class="nav-link">Contacto</a>
             </div>
-        </nav>
-        <!-- CARRUSEL -->
-        <section>
-          <img src="assets/img/carousel1.jpg" alt="" style="height: 400px;">
-          <img src="assets/img/carousel2.jpg" alt="" style="height: 400px;">
-          <img src="assets/img/carousel3.jpg" alt="" style="height: 400px;">
-        </section>
+          </div>
+        </div>
+      </nav>
+      <!-- CARRUSEL -->
+      <section>
+        <img src="assets/img/carousel1.jpg" alt="" style="height: 400px;">
+        <img src="assets/img/carousel2.jpg" alt="" style="height: 400px;">
+        <img src="assets/img/carousel3.jpg" alt="" style="height: 400px;">
+      </section>
     </header>    
 
     <!-- SECCION QUIENES SOMOS -->
-    <section class="quienes-somos" id="quienes-somos">
-      <div>
-        <h2>¿quiénes somos?</h2>
-        <div>
-          <article>
-            <i class="fas fa-plane"></i>
+    <section class="py-5 d-none d-sm-block quienes-somos" id="quienes-somos">
+      <div class="container">
+        <h2 class="text-uppercase text-center pt-3 pb-5">¿quiénes somos?</h2>
+        <div class="row">
+          <article class="col-12 col-md-4">
+            <i class="fas fa-plane d-block py-1 text-center"></i>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat voluptatem corporis
                 inventore deserunt vitae accusamus illo libero ipsum fugiat tempore nesciunt, voluptatibus
                 blanditiis cupiditate fuga ullam dicta? Consequatur qui ipsum beatae autem explicabo eligendi
@@ -62,133 +70,131 @@
                 provident dicta velit?
             </p>
           </article>
-          <article">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat voluptatem corporis
-                  inventore deserunt vitae accusamus illo libero ipsum fugiat tempore nesciunt, voluptatibus
-                  blanditiis cupiditate fuga ullam dicta? Consequatur qui ipsum beatae autem explicabo eligendi
-                  mollitia veniam aperiam non, ea eaque est doloribus ullam dolores quasi ex sit voluptatum optio
-                  reprehenderit ipsam sapiente ad id unde. Beatae ab laborum distinctio saepe repellat aut
-                  consectetur autem odio, alias quam suscipit architecto ducimus, modi aspernatur corporis et
-                  nesciunt dignissimos ad dolor optio nobis nihil voluptatem. Eligendi, optio repudiandae!
-                  Suscipit sed in voluptatibus ratione, hic mollitia quo, assumenda, quam quod perferendis harum
-                  provident dicta velit?
-              </p>
-              <i class="fas fa-mountain"></i>
+          <article class="col-12 col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat voluptatem corporis
+                inventore deserunt vitae accusamus illo libero ipsum fugiat tempore nesciunt, voluptatibus
+                blanditiis cupiditate fuga ullam dicta? Consequatur qui ipsum beatae autem explicabo eligendi
+                mollitia veniam aperiam non, ea eaque est doloribus ullam dolores quasi ex sit voluptatum optio
+                reprehenderit ipsam sapiente ad id unde. Beatae ab laborum distinctio saepe repellat aut
+                consectetur autem odio, alias quam suscipit architecto ducimus, modi aspernatur corporis et
+                nesciunt dignissimos ad dolor optio nobis nihil voluptatem. Eligendi, optio repudiandae!
+                Suscipit sed in voluptatibus ratione, hic mollitia quo, assumenda, quam quod perferendis harum
+                provident dicta velit?
+            </p>
+            <i class="fas fa-mountain d-block py-1 text-center"></i>
           </article>
-          <article>
-              <i class="fas fa-route"></i>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat voluptatem corporis
-                  inventore deserunt vitae accusamus illo libero ipsum fugiat tempore nesciunt, voluptatibus
-                  blanditiis cupiditate fuga ullam dicta? Consequatur qui ipsum beatae autem explicabo eligendi
-                  mollitia veniam aperiam non, ea eaque est doloribus ullam dolores quasi ex sit voluptatum optio
-                  reprehenderit ipsam sapiente ad id unde. Beatae ab laborum distinctio saepe repellat aut
-                  consectetur autem odio, alias quam suscipit architecto ducimus, modi aspernatur corporis et
-                  nesciunt dignissimos ad dolor optio nobis nihil voluptatem. Eligendi, optio repudiandae!
-                  Suscipit sed in voluptatibus ratione, hic mollitia quo, assumenda, quam quod perferendis harum
-                  provident dicta velit?
-              </p>
+          <article class="col-12 col-md-4">
+            <i class="fas fa-route d-block py-1 text-center"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat voluptatem corporis
+                inventore deserunt vitae accusamus illo libero ipsum fugiat tempore nesciunt, voluptatibus
+                blanditiis cupiditate fuga ullam dicta? Consequatur qui ipsum beatae autem explicabo eligendi
+                mollitia veniam aperiam non, ea eaque est doloribus ullam dolores quasi ex sit voluptatum optio
+                reprehenderit ipsam sapiente ad id unde. Beatae ab laborum distinctio saepe repellat aut
+                consectetur autem odio, alias quam suscipit architecto ducimus, modi aspernatur corporis et
+                nesciunt dignissimos ad dolor optio nobis nihil voluptatem. Eligendi, optio repudiandae!
+                Suscipit sed in voluptatibus ratione, hic mollitia quo, assumenda, quam quod perferendis harum
+                provident dicta velit?
+            </p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- SECCION DESTACADOS -->
-    <section class="destacados" id="destacados">
+    <section class="container py-5 destacados" id="destacados">
       <div>
-        <h2>destacados</h2>
-        <div>
-            <article>
-                <div>
-                    <img src="assets/img/card1.jpg" alt="imagen-1" style="height: 200px;">
-                    <div>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
-                            blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="assets/img/card2.jpg" alt="imagen-2" style="height: 200px;">
-                    <div>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
-                            blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="assets/img/card3.jpg" alt="imagen-3" style="height: 200px;">
-                    <div>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
-                            blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="assets/img/card4.jpg" alt="imagen-4" style="height: 200px;">
-                    <div>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
-                            blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
-                        </p>
-                    </div>
-                </div>
-            </article>
+        <h2 class="text-uppercase text-center pb-5">destacados</h2>
+        <div class="row">
+          <article class="col-12 col-md-3">
+            <div class="card">
+              <img src="assets/img/card1.jpg" alt="imagen-1" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
+                    blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-3">
+            <div class="card">
+              <img src="assets/img/card2.jpg" alt="imagen-2" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
+                    blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-3">
+            <div class="card">
+              <img src="assets/img/card3.jpg" alt="imagen-3" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
+                    blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-md-3">
+            <div class="card">
+              <img src="assets/img/card4.jpg" alt="imagen-4" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur impedit
+                    blanditiis vero quod perspiciatis nihil facilis placeat. Suscipit.
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- FORMULARIO CONTACTO -->
-    <section class="contacto" id="contacto">
-      <h2>contacto</h2>
+    <section class="container py-5 contacto" id="contacto">
+      <h2 class="text-uppercase text-center pb-5">contacto</h2>
       <form action="">
-          <div>
-              <label for="">nombre</label>
-              <input type="text" placeholder="Nombre">
-          </div>
-          <div>
-              <label for="">asunto</label>
-              <input type="text" placeholder="Nombre">
-          </div>
-          <div>
-              <label for="">mensaje</label>
-              <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
-          </div>
-          <div>
-            <button>enviar</button>
-          </div>
+        <div class="mb-3">
+          <label for="label-nombre" class="form-label text-capitalize">nombre</label>
+          <input type="text" class="form-control" id="label-nombre" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+          <label for="label-asunto" class="form-label text-capitalize">asunto</label>
+          <input type="text" class="form-control" id="label-asunto" placeholder="Asunto">
+        </div>
+        <div class="mb-3">
+          <label for="label-mensaje" class="form-label text-capitalize">mensaje</label>
+          <textarea rows="5" class="form-control" id="label-mensaje" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <button class="text-capitalize btn px-4">enviar</button>
       </form>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div>
-          <p>viajes chile</p>
+    <footer class="row footer">
+      <div class="col-12 col-md-6 text-center my-auto">
+          <p class="text-uppercase m-0">viajes chile</p>
       </div>
-      <div>
-          <a href="https://github.com">
-              <i class="fab fa-github-square"></i>
-          </a>
-          <a href="https://linkedin.com">
-              <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com">
-              <i class="fab fa-twitter-square"></i>
-          </a>
-          <a href="https://facebook.com">
-              <i class="fab fa-facebook-square"></i>
-          </a>
+      <div class="col-12 col-md-6 my-auto text-center">
+        <a href="https://github.com">
+          <i class="fab fa-github-square me-3"></i>
+        </a>
+        <a href="https://linkedin.com">
+          <i class="fab fa-linkedin me-3"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter-square me-3"></i>
+        </a>
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-square"></i>
+        </a>
       </div>
     </footer>
 
