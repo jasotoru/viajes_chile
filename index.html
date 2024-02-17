@@ -44,7 +44,7 @@
           </div>
         </div>
       </nav>
-      
+
       <!-- CARRUSEL -->
       <section id="carousel" class="carousel slide">
         <div class="carousel-inner">
@@ -196,7 +196,30 @@
           <label for="label-mensaje" class="form-label text-capitalize">mensaje</label>
           <textarea rows="5" class="form-control" id="label-mensaje" placeholder="Escribe tu mensaje"></textarea>
         </div>
-        <button class="text-capitalize btn px-4">enviar</button>
+        <button class="text-capitalize btn px-4"
+                type="button" 
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+          enviar
+        </button>
+        
+        <!-- MODAL PARA EL BOTON ENVIAR -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-4 text-dark" id="exampleModalLabel">Mensaje</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="fs-5 text-dark">Su mensaje ha sido enviado</h2>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn text-capitalize" data-bs-dismiss="modal">cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
     </section>
 
